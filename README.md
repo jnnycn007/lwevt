@@ -7,6 +7,9 @@
 * Written in C (C11), compatible with `stdint.h` data types
 * Platform independent, no architecture specific code
 * Flexible for application defined event types and associated data
+* Dispatches an event to all registered listener callbacks, with a configurable maximum listener count
+* Prevents registering the same listener callback twice
+* Supports multiple independent event handles, not limited to a single default handle
 * Easy to use and maintain
 * User friendly MIT license
 

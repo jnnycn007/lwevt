@@ -3,7 +3,7 @@ LwEVT |version| documentation
 
 Welcome to the documentation for version |version|.
 
-LwEVT is a simple event manager for embedded system.
+LwEVT is a simple event manager for embedded systems.
 Its main purpose is to be able to send various events in the application from various modules.
 Application defines custom types with optional data structure to be sent to various application listeners.
 
@@ -21,6 +21,9 @@ Features
 * Written in C (C11), compatible with ``stdint.h`` data types
 * Platform independent, no architecture specific code
 * Flexible for application defined event types and associated data
+* Dispatches an event to all registered listener callbacks, with a configurable maximum listener count
+* Prevents registering the same listener callback twice
+* Supports multiple independent event handles, not limited to a single default handle
 * Easy to use and maintain
 * User friendly MIT license
 
