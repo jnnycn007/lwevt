@@ -1,5 +1,9 @@
 # Lightweight event manager
 
+LwEVT is a simple event manager for embedded systems.
+Its main purpose is to be able to send various events in the application from various modules.
+Application defines custom types with optional data structure to be sent to various application listeners.
+
 [Open documentation](https://docs.majerle.eu/projects/lwevt/)
 
 ## Features
